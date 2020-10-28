@@ -36,6 +36,7 @@
 			<a href="" class="text-dark ml-5">О МАГАЗИНЕ</a>
 			<a href="" class="text-dark ml-5">НАШИ МАГАЗИНЫ</a>
 			<a href="admin.php" class="text-dark ml-5 font-weight-bold">АДМИН ПАНЕЛЬ</a>
+			<a href="delete.php" class="text-dark ml-5 font-weight-bold">УДАЛИТЬ ТОВАР</a>
 		</div>
 		<!--иконки-->
 		<div style="height:30px;width:30px; margin-top:30px;" class="ml-5">
@@ -130,8 +131,13 @@
 					echo "<p class='font-weight-bold text-center' style='font-size:25px;'>".$stroka6["price"]."</p>"
 				?>				
 			</div>
-		</div>		
-		
+		</div>
+	
+	<form action="delete2.php" method="GET">
+		<input type="	" name="delete" class="form-control col-3 mt-5">
+		<button class="btn bg-success text-white mt-2">удалить</button>
+	</form>				
 	</div>
+
 </body>
 </html>
